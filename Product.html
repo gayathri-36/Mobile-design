@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <script src="product.js"></script>
+    <div class="nav-bar">
+        <div class="vivo"><a href="vivo.html">VIVO</a></div>
+        <div class="nav-left">
+            <div class="home"><a href="vivo.html">Home</a></div>
+            <div class="product"><a href="Product.html">Product</a></div>
+            <div class="estore"><a href="e-store.html">E-Store</a></div>
+            <div class="vivostore"><a href="vivo-exclusive-store.html">vivo Exclusive store</a></div>
+            <div class="community"><a href="community.html">Community</a></div>
+            <div class="support"><a href="support.html">Support</a></div>
+            <div class="funtouch"><a href="funtouch-os.html">Funtouch OS</a></div>
+            <div class="explore"><a href="Explore-vivo.html">Explore vivo</a></div>
+            <div class="nav-right">
+                <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="contact">
+                    <i class="fa-regular fa-user"></i>
+                    <span class="contact-tooltiptext">
+                        <div class="contact-list"><i class="fa-regular fa-heart"></i>My Orders</div>
+                        <div class="contact-list"><i class="fa-solid fa-cart-shopping"></i>Cart</div>
+                        <div class="contact-list-sign"><i class="fa-regular fa-user"></i>Sign in/Register</div>
+                    </span>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="product-common-text">
+        Find the phone thats right for you
+    </div>
+    <div class="model-nav">
+        <!--<div class="all-models">All Models</div>-->
+        <button class="all-models" onclick="allmodels()">All models</button>
+        <!--<div class="all-models">X Series</div>-->
+        <button class="all-models" onclick="xseries()">X Series</button>
+        <!--<div class="all-models">V Series</div>-->
+        <button class="all-models" onclick="vseries()">V Series</button>
+        <!--<div class="all-models">Y Series</div>-->
+        <button class="all-models" onclick="yseries()">Y Series</button>
+        <!--<div class="all-models">Series T</div>-->
+        <button class="all-models" onclick="tseries()">Series T</button>
+        <!--<div class="all-models">Accessories</div>-->
+        <button class="all-models" onclick="accessories()">Accessories</button>
+    </div>
+    <div >
+        <!--all models1-->
+        <div class="total-mobile-page" id="all-models-details">
+        <!--1st line -->
+        <div class="mobile-page-lines">
+            <!--T3 ultra-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T3 Ultra Image1.webp" alt="T3 Ultra lunar gray" id="T3 Ultra Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T3img1()" class="t3-btn1"></button>
+                    <button onclick="T3img2()" class="t3-btn2"></button>
+                </div>
+                <div class="text">T3 Ultra</div>
+            </div>
+            <!--T3 pro 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T3 Pro 5G Image1.webp" alt="T3 Pro 5G" id="T3 pro 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T3proimg1()" class="t3-pro-btn1"></button>
+                    <button onclick="T3proimg2()" class="t3-pro-btn2"></button>
+                </div>
+                <div class="text">T3 Pro 5G</div>
+            </div> 
+            <!--V40-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V40 Image1.webp" alt="V40" id="V40 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V40img1()" class="v40-btn1"></button>
+                    <button onclick="V40img2()" class="v40-btn2"></button>
+                    <button onclick="V40img3()" class="v40-btn3"></button>
+                </div>
+                <div class="text">V40</div>
+            </div>
+        </div>
+        <!--2nd line -->
+        <div class="mobile-page-lines">
+            <!--V40 pro-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V40 Pro Image1.webp" alt="V40 Pro" id="V40 Pro Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V40proimg1()" class="v40-pro-btn1"></button>
+                    <button onclick="V40proimg2()" class="v40-pro-btn2"></button>
+                </div>
+                <div class="text">V40 Pro</div>
+            </div>
+            <!--TWS 3e-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/TWS 3e.png" alt="TWS 3e" style="margin-top: 60px;">
+                </div>
+                <div class="text">TWS 3e</div>
+            </div> 
+            <!--X Fold3 Pro-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/X Fold3 Pro.png" alt="X Fold3 Pro">
+                </div>
+                <div class="btns">
+                    <button class="x-fold3-pro-btn"></button>
+                </div>
+                <div class="text">X Fold3 Pro</div>
+            </div>
+        </div>
+        <!--3rd line-->
+        <div class="mobile-page-lines">
+            <!--Y28e 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y28e 5G Image1.webp" alt="Y28e 5G" id="Y28e 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y28e5Gimg1()" class="y28e-5g-btn1"></button>
+                    <button onclick="Y28e5Gimg2()" class="y28e-5g-btn2"></button>
+                </div>
+                <div class="text">Y28e 5G</div>
+            </div>
+            <!--Y28s 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y28s 5G Image1.webp" alt="Y28e 5G" id="Y28s 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y28s5Gimg1()" class="y28s-5g-btn1"></button>
+                    <button onclick="Y28s5Gimg2()" class="y28s-5g-btn2"></button>
+                </div>
+                <div class="text">Y28e 5G</div>
+            </div> 
+            <!--T3 Lite 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T3 Lite 5G Image1.webp" alt="T3 Lite 5G" id="T3 Lite 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T3lite5gimg1()" class="t3-lite-5g-btn1"></button>
+                    <button onclick="T3lite5gimg2()" class="t3-lite-5g-btn2"></button>
+                </div>
+                <div class="text">T3 Lite 5G</div>
+            </div>
+        </div>
+        <!--4th line-->
+        <div class="mobile-page-lines">
+            <!--Y58 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y58 5G Image1.webp" alt="Y58 5G" id="Y58 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y585Gimg1()" class="y58-5g-btn1"></button>
+                    <button onclick="Y585Gimg2()" class="y58-5g-btn2"></button>
+                </div>
+                <div class="text">Y58 5G</div>
+            </div>
+            <!--Y200 pro-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y200 Pro 5G Image1.webp" alt="Y200 Pro" id="Y200 Pro Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y200Proimg1()" class="y200-pro-btn1"></button>
+                    <button onclick="Y200Proimg2()" class="y200-pro-btn2"></button>
+                </div>
+                <div class="text">Y200 Pro</div>
+            </div> 
+            <!--v30e-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V30e Image1.webp" alt="V30e" id="V30e Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V30eimg1()" class="v30e-btn1"></button>
+                    <button onclick="V30eimg2()" class="v30e-btn2"></button>
+                </div>
+                <div class="text">V30e</div>
+            </div>
+        </div>
+        <!--5th line-->
+        <div class="mobile-page-lines">
+            <!--Y18i-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y18i Image1.webp" alt="Y18i" id="Y18i Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y18iimg1()" class="y18i-btn1"></button>
+                    <button onclick="Y18iimg2()" class="y18i-btn2"></button>
+                </div>
+                <div class="text">Y18i</div>
+            </div>
+            <!--Y18-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y18 Image1.webp" alt="Y18" id="Y18 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y18img1()" class="y18-btn1"></button>
+                    <button onclick="Y18img2()" class="y18-btn2"></button>
+                </div>
+                <div class="text">Y18</div>
+            </div> 
+            <!--Y18e-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y18e Image1.webp" alt="Y18e" id="Y18e Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y18eimg1()" class="y18e-btn1"></button>
+                    <button onclick="Y18eimg2()" class="y18e-btn2"></button>
+                </div>
+                <div class="text">Y18e</div>
+            </div>
+        </div>
+        <!--6th line-->
+        <div class="mobile-page-lines">
+            <!--V30 Pro-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V30 Pro Image1.webp" alt="V30 Pro" id="V30 Pro Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V30proimg1()" class="v30-pro-btn1"></button>
+                    <button onclick="V30proimg2()" class="v30-pro-btn2"></button>
+                </div>
+                <div class="text">V30 Pro</div>
+            </div>
+            <!--V30-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V30 Image1.webp" alt="V30" id="V30 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V30img1()" class="v30-btn1"></button>
+                    <button onclick="V30img2()" class="v30-btn2"></button>
+                </div>
+                <div class="text">V30</div>
+            </div> 
+            <!--X100 Pro-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/X100 Pro Image.webp" alt="X100 Pro">
+                </div>
+                <div class="btns">
+                    <button class="x100-pro-btn1"></button>
+                </div>
+                <div class="text">X100 Pro</div>
+            </div>
+        </div>
+        <!--7th line-->
+        <div class="mobile-page-lines">
+            <!--V40e-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V40e Image1.webp" alt="V40e" id="V40e Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V40eimg1()" class="v40e-btn1"></button>
+                    <button onclick="V40eimg2()" class="v40e-btn2"></button>
+                </div>
+                <div class="text">V40e</div>
+            </div>
+            <!--X100-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/X100 Image1.webp" alt="X100" id="X100 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="X100img1()" class="x100-btn1"></button>
+                    <button onclick="X100img2()" class="x100-btn2"></button>
+                </div>
+                <div class="text">X100</div>
+            </div> 
+            <!--T3x 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T3x 5G Image1.webp" alt="T3x 5G" id="T3x 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T3x5gimg1()" class="t3x-5g-btn1"></button>
+                    <button onclick="T3x5gimg2()" class="t3x-5g-btn2"></button>
+                    <button onclick="T3x5gimg3()" class="t3x-5g-btn3"></button>
+                </div>
+                <div class="text">T3x 5G</div>
+            </div>
+        </div> 
+        <!--8th line-->
+        <div class="mobile-page-lines">
+            <!--T3 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T3 5G Image1.webp" alt="T3 5G" id="T3 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T35gimg1()" class="t3-5g-btn1"></button>
+                    <button onclick="T35gimg2()" class="t3-5g-btn2"></button>
+                </div>
+                <div class="text">T3 5G</div>
+            </div>
+            <!--Y200e 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y200e 5G Image1.webp" alt="Y200e 5G" id="Y200e 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y200e5gimg1()" class="y200e-5g-btn1"></button>
+                    <button onclick="Y200e5gimg2()" class="y200e-5g-btn2"></button>
+                </div>
+                <div class="text">Y200e 5G</div>
+            </div> 
+            <!--Y28 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y28 5G Image1.webp" alt="Y28 5G" id="Y28 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y285gimg1()" class="y28-5g-btn1"></button>
+                    <button onclick="Y285gimg2()" class="y28-5g-btn2"></button>
+                </div>
+                <div class="text">Y28 5G</div>
+            </div>
+        </div> 
+        <!--9th line-->
+        <div class="mobile-page-lines">
+            <!--Y200 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y200 5G Image1.webp" alt="Y200 5G" id="Y200 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y2005gimg1()" class="y200-5g-btn1"></button>
+                    <button onclick="Y2005gimg2()" class="y200-5g-btn2"></button>
+                </div>
+                <div class="text">Y200 5G</div>
+            </div>
+            <!--V29-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V29 Image1.webp" alt="V29" id="V29 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V29img1()" class="v29-btn1"></button>
+                    <button onclick="V29img2()" class="v29-btn2"></button>
+                    <button onclick="V29img3()" class="v29-btn3"></button>
+                </div>
+                <div class="text">V29</div>
+            </div> 
+            <!--T2 Pro 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T2 Pro 5G Image1.webp" alt="T2 Pro 5G" id="T2 Pro 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T2pro5gimg1()" class="t2-pro-5g-btn1"></button>
+                    <button onclick="T2pro5gimg2()" class="t2-pro-5g-btn2"></button>
+                </div>
+                <div class="text">T2 Pro 5G</div>
+            </div>            
+        </div>
+        <!--10th line-->
+        <div class="mobile-page-lines">
+            <!--V29 Pro-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V29 Pro Image1.webp" alt="V29 Pro" id="V29 Pro Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V29proimg1()" class="v29-pro-btn1"></button>
+                    <button onclick="V29proimg2()" class="v29-pro-btn2"></button>
+                </div>
+                <div class="text">V29 Pro</div>
+            </div>
+            <!--V29e 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V29e 5G Image1.webp" alt="V29e 5G" id="V29e 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V29e5gimg1()" class="v29e-5g-btn1"></button>
+                    <button onclick="V29e5gimg2()" class="v29e-5g-btn2"></button>
+                </div>
+                <div class="text">V29e 5G</div>
+            </div> 
+            <!--Y17s-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y17s Image1.webp" alt="Y17s" id="Y17s Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y17simg1()" class="y17s-btn1"></button>
+                    <button onclick="Y17simg2()" class="y17s-btn2"></button>
+                </div>
+                <div class="text">Y17s</div>
+            </div>
+        </div> 
+        <!--11th line-->
+        <div class="mobile-page-lines">
+            <!--Y36-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y36 Image1.webp" alt="Y36" id="Y36 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y36img1()" class="y36-btn1"></button>
+                    <button onclick="Y36img2()" class="y36-btn2"></button>
+                </div>
+                <div class="text">Y36</div>
+            </div>
+            <!--Y27-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y27 Image1.webp" alt="Y27" id="Y27 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y27img1()" class="y27-btn1"></button>
+                    <button onclick="Y27img2()" class="y27-btn2"></button>
+                </div>
+                <div class="text">Y27</div>
+            </div> 
+            <!--X90 Pro-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/X90 Pro Image.webp" alt="X90 Pro" id="X90 Pro Img">
+                </div>
+                <div class="btns">
+                    <button onclick="X90proimg1()" class="x90-pro-btn1"></button>
+                </div>
+                <div class="text">X90 Pro</div>
+            </div>
+        </div>
+        <!--12th line-->
+        <div class="mobile-page-lines">
+            <!--X90-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/X90 Image1.webp" alt="X90" id="X90 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="X90img1()" class="x90-btn1"></button>
+                    <button onclick="X90img2()" class="x90-btn2"></button>
+                </div>
+                <div class="text">X90</div>
+            </div>
+            <!--T2X 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T2X 5G Image1.webp" alt="T2X 5G" id="T2X 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T2x5gimg1()" class="t2x-5g-btn1"></button>
+                    <button onclick="T2x5gimg2()" class="t2x-5g-btn2"></button>
+                    <button onclick="T2x5gimg3()" class="t2x-5g-btn3"></button>
+                </div>
+                <div class="text">T2X 5G</div>
+            </div> 
+            <!--T2 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T2 5G Image1.webp" alt="T2 5G" id="T2 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T25gimg1()" class="t2-5g-btn1"></button>
+                    <button onclick="T25gimg2()" class="t2-5g-btn2"></button>
+                    
+                </div>
+                <div class="text">T2 5G</div>
+            </div>
+        </div>
+        <!--13nth line-->
+        <div class="mobile-page-lines">
+            <!--Y100A-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y100A Image1.webp" alt="Y100A" id="Y100A Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y100aimg1()" class="y100a-btn1"></button>
+                    <button onclick="Y100aimg2()" class="y100a-btn2"></button>
+                    <button onclick="Y100aimg3()" class="y100a-btn3"></button>
+                </div>
+                <div class="text">Y100A</div>
+            </div>
+            <!--Y02t-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y02t Image1.webp" alt="Y02t" id="Y02t Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y02timg1()" class="y02t-btn1"></button>
+                    <button onclick="Y02timg2()" class="y02t-btn2"></button>
+                </div>
+                <div class="text">Y02t</div>
+            </div> 
+            <!--V27 Pro-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V27 Image1.webp" alt="V27 Pro" id="V27 Pro Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V27proimg1()" class="v27-pro-btn1"></button>
+                    <button onclick="V27proimg2()" class="v27-pro-btn2"></button>
+                    
+                </div>
+                <div class="text">V27 Pro</div>
+            </div>
+        </div>
+        <!--14nth line-->
+        <div class="mobile-page-lines">
+            <!--V27-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/V27 Image1.webp" alt="V27" id="V27 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="V27img1()" class="v27-btn1"></button>
+                    <button onclick="V27img2()" class="v27-btn2"></button>
+                </div>
+                <div class="text">V27</div>
+            </div>
+            <!--Y56 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y56 5G Image1.webp" alt="Y56 5G" id="Y56 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y565gimg1()" class="y56-5g-btn1"></button>
+                    <button onclick="Y565gimg2()" class="y56-5g-btn2"></button>
+                </div>
+                <div class="text">Y56 5G</div>
+            </div> 
+            <!--Y100-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y100 Image1.webp" alt="Y100" id="Y100 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y100img1()" class="y100-btn1"></button>
+                    <button onclick="Y100img2()" class="y100-btn2"></button>
+                    <button onclick="Y100img3()" class="y100-btn3"></button>
+                </div>
+                <div class="text">Y100</div>
+            </div>
+        </div>
+        <!--15nth line-->
+        <div class="mobile-page-lines">
+            <!--Y02-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y02 Image1.webp" alt="Y02" id="Y02 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y02img1()" class="y02-btn1"></button>
+                    <button onclick="Y02img2()" class="y02-btn2"></button>
+                </div>
+                <div class="text">Y02</div>
+            </div>
+            <!--Y16-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y16 Image1.webp" alt="Y16" id="Y16 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y16img1()" class="y16-btn1"></button>
+                    <button onclick="Y16img2()" class="y16-btn2"></button>
+                </div>
+                <div class="text">Y16</div>
+            </div> 
+            <!--Y22-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y22 Image1.webp" alt="Y22" id="Y22 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y22img1()" class="y22-btn1"></button>
+                    <button onclick="Y22img2()" class="y22-btn2"></button>
+                </div>
+                <div class="text">Y22</div>
+            </div>
+        </div>
+        <!--16nth line-->
+        <div class="mobile-page-lines">
+            <!--Y35-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y35 Image1.webp" alt="Y35" id="Y35 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y35img1()" class="y35-btn1"></button>
+                    <button onclick="Y35img2()" class="y35-btn2"></button>
+                </div>
+                <div class="text">Y35</div>
+            </div>
+            <!--T1x-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T1x Image1.webp" alt="t1x" id="T1x Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T1ximg1()" class="t1x-btn1"></button>
+                    <button onclick="T1ximg2()" class="t1x-btn2"></button>
+                </div>
+                <div class="text">T1x</div>
+            </div> 
+            <!--T1-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T1 Image1.webp" alt="T1" id="T1 Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T1img1()" class="t1-btn1"></button>
+                    <button onclick="T1img2()" class="t1-btn2"></button>
+                    <button onclick="T1img3()" class="t1-btn3"></button>
+                </div>
+                <div class="text">T1</div>
+            </div>
+        </div>
+        <!--17nth line-->
+        <div class="mobile-page-lines">
+            <!--T1 Pro 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T1 Pro 5G Image1.webp" alt="T1 Pro 5G" id="T1 Pro 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T1pro5gimg1()" class="t1-pro-5g-btn1"></button>
+                    <button onclick="T1pro5gimg2()" class="t1-pro-5g-btn2"></button>
+                </div>
+                <div class="text">T1 Pro 5G</div>
+            </div>
+            <!--T1 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/T1 5G Image1.webp" alt="T1 5G" id="T1 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="T15gimg1()" class="t1-5g-btn1"></button>
+                    <button onclick="T15gimg2()" class="t1-5g-btn2"></button>
+                </div>
+                <div class="text">T1 5G</div>
+            </div> 
+            <!--Y75 5G-->
+            <div class="mobile-page">
+                <div class="mobile-img">
+                    <img src="Images/Product/Y75 5G Image1.webp" alt="Y75 5G" id="Y75 5G Img">
+                </div>
+                <div class="btns">
+                    <button onclick="Y755gimg1()" class="y75-5g-btn1"></button>
+                    <button onclick="Y755gimg2()" class="y75-5g-btn2"></button>
+                </div>
+                <div class="text">Y75 5G</div>
+            </div>
+        </div>
+<!--last-->
+        </div>
+
+        <!--X Series2-->
+        <div class="total-mobile-page" id="x-series-details" style="display: none;">
+            <!--1st line-->
+            <div class="mobile-page-lines"> 
+                <!--x fold3 pro-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/X Fold3 Pro.png" alt="X Fold3 Pro">
+                    </div>
+                    <div class="btns">
+                        <button class="x-fold3-pro-btn"></button>
+                    </div>
+                    <div class="text">X Fold3 Pro</div>
+                </div>
+                <!--X100 pro--> 
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/X100 Pro Image.webp" alt="X100 Pro">
+                    </div>
+                    <div class="btns">
+                        <button class="x100-pro-btn1"></button>
+                    </div>
+                    <div class="text">X100 Pro</div>
+                </div> 
+                <!--X100-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/X100 Image1.webp" alt="X100" id="X100 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="X100img1()" class="x100-btn1"></button>
+                        <button onclick="X100img2()" class="x100-btn2"></button>
+                    </div>
+                    <div class="text">X100</div>
+                </div> 
+            </div>
+            <!--2nd line-->
+            <div class="mobile-page-lines">
+                <!--X90 Pro-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/X90 Pro Image.webp" alt="X90 Pro" id="X90 Pro Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="X90proimg1()" class="x90-pro-btn1"></button>
+                    </div>
+                    <div class="text">X90 Pro</div>
+                </div>
+                <!--X90-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/X90 Image1.webp" alt="X90" id="X90 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="X90img1()" class="x90-btn1"></button>
+                        <button onclick="X90img2()" class="x90-btn2"></button>
+                    </div>
+                    <div class="text">X90</div>
+                </div>                                  
+            </div>    
+        </div>
+
+        <!--V Series3-->
+        <div class="total-mobile-page" id="v-series" style="display: none;">
+            <!--1st line-->
+            <div class="mobile-page-lines">
+                <!--V40 pro-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V40 Pro Image1.webp" alt="V40 Pro" id="V40 Pro Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V40proimg1()" class="v40-pro-btn1"></button>
+                        <button onclick="V40proimg2()" class="v40-pro-btn2"></button>
+                    </div>
+                    <div class="text">V40 Pro</div>
+                </div>  
+                <!--V40e-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V40e Image1.webp" alt="V40e" id="V40e Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V40eimg1()" class="v40e-btn1"></button>
+                        <button onclick="V40eimg2()" class="v40e-btn2"></button>
+                    </div>
+                    <div class="text">V40e</div>
+                </div>
+                <!--V40-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V40 Image1.webp" alt="V40" id="V40 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V40img1()" class="v40-btn1"></button>
+                        <button onclick="V40img2()" class="v40-btn2"></button>
+                        <button onclick="V40img3()" class="v40-btn3"></button>
+                    </div>
+                    <div class="text">V40</div>
+                </div>                                          
+            </div>
+            <!--2nd line-->
+            <div class="mobile-page-lines">
+                <!--V30 Pro-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V30 Pro Image1.webp" alt="V30 Pro" id="V30 Pro Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V30proimg1()" class="v30-pro-btn1"></button>
+                        <button onclick="V30proimg2()" class="v30-pro-btn2"></button>
+                    </div>
+                    <div class="text">V30 Pro</div>
+                </div>
+                <!--V30-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V30 Image1.webp" alt="V30" id="V30 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V30img1()" class="v30-btn1"></button>
+                        <button onclick="V30img2()" class="v30-btn2"></button>
+                    </div>
+                    <div class="text">V30</div>
+                </div>
+                <!--v30e-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V30e Image1.webp" alt="V30e" id="V30e Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V30eimg1()" class="v30e-btn1"></button>
+                        <button onclick="V30eimg2()" class="v30e-btn2"></button>
+                    </div>
+                    <div class="text">V30e</div>
+                </div>                                    
+            </div>
+            <!--3rd line-->
+            <div class="mobile-page-lines">
+                <!--V29e 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V29e 5G Image1.webp" alt="V29e 5G" id="V29e 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V29e5gimg1()" class="v29e-5g-btn1"></button>
+                        <button onclick="V29e5gimg2()" class="v29e-5g-btn2"></button>
+                    </div>
+                    <div class="text">V29e 5G</div>
+                </div>
+                <!--V29-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V29 Image1.webp" alt="V29" id="V29 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V29img1()" class="v29-btn1"></button>
+                        <button onclick="V29img2()" class="v29-btn2"></button>
+                        <button onclick="V29img3()" class="v29-btn3"></button>
+                    </div>
+                    <div class="text">V29</div>
+                </div>
+                <!--V29 Pro-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V29 Pro Image1.webp" alt="V29 Pro" id="V29 Pro Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V29proimg1()" class="v29-pro-btn1"></button>
+                        <button onclick="V29proimg2()" class="v29-pro-btn2"></button>
+                    </div>
+                    <div class="text">V29 Pro</div>
+                </div>   
+            </div>
+            <!--4th line-->
+            <div class="mobile-page-lines">
+                <!--V27 Pro-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V27 Image1.webp" alt="V27 Pro" id="V27 Pro Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V27proimg1()" class="v27-pro-btn1"></button>
+                        <button onclick="V27proimg2()" class="v27-pro-btn2"></button>   
+                    </div>
+                    <div class="text">V27 Pro</div>
+                </div>
+                <!--V27-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/V27 Image1.webp" alt="V27" id="V27 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="V27img1()" class="v27-btn1"></button>
+                        <button onclick="V27img2()" class="v27-btn2"></button>
+                    </div>
+                    <div class="text">V27</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Y series4-->
+        <div  class="total-mobile-page" id="y-series" style="display: none;">
+            <!--1st line-->
+            <div class="mobile-page-lines">
+                <!--Y18i-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y18i Image1.webp" alt="Y18i" id="Y18i Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y18iimg1()" class="y18i-btn1"></button>
+                        <button onclick="Y18iimg2()" class="y18i-btn2"></button>
+                    </div>
+                    <div class="text">Y18i</div>
+                </div>
+                <!--Y18e-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y18e Image1.webp" alt="Y18e" id="Y18e Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y18eimg1()" class="y18e-btn1"></button>
+                        <button onclick="Y18eimg2()" class="y18e-btn2"></button>
+                    </div>
+                    <div class="text">Y18e</div>
+                </div>
+                <!--Y18-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y18 Image1.webp" alt="Y18" id="Y18 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y18img1()" class="y18-btn1"></button>
+                        <button onclick="Y18img2()" class="y18-btn2"></button>
+                    </div>
+                    <div class="text">Y18</div>
+                </div>
+            </div>
+            <!--2nd line-->
+            <div class="mobile-page-lines">
+                <!--Y200 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y200 5G Image1.webp" alt="Y200 5G" id="Y200 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y2005gimg1()" class="y200-5g-btn1"></button>
+                        <button onclick="Y2005gimg2()" class="y200-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y200 5G</div>
+                </div>
+                <!--Y58 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y58 5G Image1.webp" alt="Y58 5G" id="Y58 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y585Gimg1()" class="y58-5g-btn1"></button>
+                        <button onclick="Y585Gimg2()" class="y58-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y58 5G</div>
+                </div>
+                <!--Y28s 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y28s 5G Image1.webp" alt="Y28e 5G" id="Y28s 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y28s5Gimg1()" class="y28s-5g-btn1"></button>
+                        <button onclick="Y28s5Gimg2()" class="y28s-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y28e 5G</div>
+                </div>
+            </div>
+            <!--3rd line-->
+            <div class="mobile-page-lines">
+                <!--Y28e 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y28e 5G Image1.webp" alt="Y28e 5G" id="Y28e 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y28e5Gimg1()" class="y28e-5g-btn1"></button>
+                        <button onclick="Y28e5Gimg2()" class="y28e-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y28e 5G</div>
+                </div>
+                <!--Y200e 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y200e 5G Image1.webp" alt="Y200e 5G" id="Y200e 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y200e5gimg1()" class="y200e-5g-btn1"></button>
+                        <button onclick="Y200e5gimg2()" class="y200e-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y200e 5G</div>
+                </div>
+                <!--Y28 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y28 5G Image1.webp" alt="Y28 5G" id="Y28 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y285gimg1()" class="y28-5g-btn1"></button>
+                        <button onclick="Y285gimg2()" class="y28-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y28 5G</div>
+                </div>
+            </div>
+            <!--4th line-->
+            <div class="mobile-page-lines">
+                <!--Y200 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y200 5G Image1.webp" alt="Y200 5G" id="Y200 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y2005gimg1()" class="y200-5g-btn1"></button>
+                        <button onclick="Y2005gimg2()" class="y200-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y200 5G</div>
+                </div>
+                <!--Y17s-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y17s Image1.webp" alt="Y17s" id="Y17s Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y17simg1()" class="y17s-btn1"></button>
+                        <button onclick="Y17simg2()" class="y17s-btn2"></button>
+                    </div>
+                    <div class="text">Y17s</div>
+                </div>
+                <!--Y36-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y36 Image1.webp" alt="Y36" id="Y36 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y36img1()" class="y36-btn1"></button>
+                        <button onclick="Y36img2()" class="y36-btn2"></button>
+                    </div>
+                    <div class="text">Y36</div>
+                </div>
+            </div>
+            <!--5th line-->
+            <div class="mobile-page-lines">
+                <!--Y27-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y27 Image1.webp" alt="Y27" id="Y27 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y27img1()" class="y27-btn1"></button>
+                        <button onclick="Y27img2()" class="y27-btn2"></button>
+                    </div>
+                    <div class="text">Y27</div>
+                </div>
+                <!--Y02t-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y02t Image1.webp" alt="Y02t" id="Y02t Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y02timg1()" class="y02t-btn1"></button>
+                        <button onclick="Y02timg2()" class="y02t-btn2"></button>
+                    </div>
+                    <div class="text">Y02t</div>
+                </div>
+                <!--Y100-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y100 Image1.webp" alt="Y100" id="Y100 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y100img1()" class="y100-btn1"></button>
+                        <button onclick="Y100img2()" class="y100-btn2"></button>
+                        <button onclick="Y100img3()" class="y100-btn3"></button>
+                    </div>
+                    <div class="text">Y100</div>
+                </div>
+            </div>
+            <!--6th line-->
+            <div class="mobile-page-lines">
+                <!--Y100A-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y100A Image1.webp" alt="Y100A" id="Y100A Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y100aimg1()" class="y100a-btn1"></button>
+                        <button onclick="Y100aimg2()" class="y100a-btn2"></button>
+                        <button onclick="Y100aimg3()" class="y100a-btn3"></button>
+                    </div>
+                    <div class="text">Y100A</div>
+                </div>
+                <!--Y56 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y56 5G Image1.webp" alt="Y56 5G" id="Y56 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y565gimg1()" class="y56-5g-btn1"></button>
+                        <button onclick="Y565gimg2()" class="y56-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y56 5G</div>
+                </div> 
+                <!--Y02-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y02 Image1.webp" alt="Y02" id="Y02 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y02img1()" class="y02-btn1"></button>
+                        <button onclick="Y02img2()" class="y02-btn2"></button>
+                    </div>
+                    <div class="text">Y02</div>
+                </div>
+            </div>
+            <!--7th line-->
+            <div class="mobile-page-lines">
+                <!--Y22-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y22 Image1.webp" alt="Y22" id="Y22 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y22img1()" class="y22-btn1"></button>
+                        <button onclick="Y22img2()" class="y22-btn2"></button>
+                    </div>
+                    <div class="text">Y22</div>
+                </div>
+                <!--Y35-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y35 Image1.webp" alt="Y35" id="Y35 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y35img1()" class="y35-btn1"></button>
+                        <button onclick="Y35img2()" class="y35-btn2"></button>
+                    </div>
+                    <div class="text">Y35</div>
+                </div>
+                <!--Y75 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y75 5G Image1.webp" alt="Y75 5G" id="Y75 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y755gimg1()" class="y75-5g-btn1"></button>
+                        <button onclick="Y755gimg2()" class="y75-5g-btn2"></button>
+                    </div>
+                    <div class="text">Y75 5G</div>
+                </div>
+            </div>
+            <!--8th line-->
+            <div class="mobile-page-lines">
+                <!--Y16-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/Y16 Image1.webp" alt="Y16" id="Y16 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="Y16img1()" class="y16-btn1"></button>
+                        <button onclick="Y16img2()" class="y16-btn2"></button>
+                    </div>
+                    <div class="text">Y16</div>
+                </div>
+            </div>
+        </div>
+
+        <!--Series T5-->
+        <div class="total-mobile-page" id="t-series" style="display: none;">
+            <!--1st line-->
+            <div class="mobile-page-lines">
+                <!--T3 ultra-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T3 Ultra Image1.webp" alt="T3 Ultra lunar gray" id="T3 Ultra Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T3img1()" class="t3-btn1"></button>
+                        <button onclick="T3img2()" class="t3-btn2"></button>
+                    </div>
+                    <div class="text">T3 Ultra</div>
+                </div>
+                <!--T3 pro 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T3 Pro 5G Image1.webp" alt="T3 Pro 5G" id="T3 pro 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T3proimg1()" class="t3-pro-btn1"></button>
+                        <button onclick="T3proimg2()" class="t3-pro-btn2"></button>
+                    </div>
+                    <div class="text">T3 Pro 5G</div>
+                </div>
+                <!--T3 Lite 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T3 Lite 5G Image1.webp" alt="T3 Lite 5G" id="T3 Lite 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T3lite5gimg1()" class="t3-lite-5g-btn1"></button>
+                        <button onclick="T3lite5gimg2()" class="t3-lite-5g-btn2"></button>
+                    </div>
+                    <div class="text">T3 Lite 5G</div>
+                </div>                          
+            </div>
+            <!--2nd line-->
+            <div class="mobile-page-lines">
+                <!--T3x 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T3x 5G Image1.webp" alt="T3x 5G" id="T3x 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T3x5gimg1()" class="t3x-5g-btn1"></button>
+                        <button onclick="T3x5gimg2()" class="t3x-5g-btn2"></button>
+                        <button onclick="T3x5gimg3()" class="t3x-5g-btn3"></button>
+                    </div>
+                    <div class="text">T3x 5G</div>
+                </div>
+                <!--T3 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T3 5G Image1.webp" alt="T3 5G" id="T3 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T35gimg1()" class="t3-5g-btn1"></button>
+                        <button onclick="T35gimg2()" class="t3-5g-btn2"></button>
+                    </div>
+                    <div class="text">T3 5G</div>
+                </div>
+                <!--T2 Pro 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T2 Pro 5G Image1.webp" alt="T2 Pro 5G" id="T2 Pro 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T2pro5gimg1()" class="t2-pro-5g-btn1"></button>
+                        <button onclick="T2pro5gimg2()" class="t2-pro-5g-btn2"></button>
+                    </div>
+                    <div class="text">T2 Pro 5G</div>
+                </div>            
+            </div>
+            <!--3rd line-->
+            <div class="mobile-page-lines">
+                <!--T2X 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T2X 5G Image1.webp" alt="T2X 5G" id="T2X 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T2x5gimg1()" class="t2x-5g-btn1"></button>
+                        <button onclick="T2x5gimg2()" class="t2x-5g-btn2"></button>
+                        <button onclick="T2x5gimg3()" class="t2x-5g-btn3"></button>
+                    </div>
+                    <div class="text">T2X 5G</div>
+                </div>
+                <!--T2 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T2 5G Image1.webp" alt="T2 5G" id="T2 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T25gimg1()" class="t2-5g-btn1"></button>
+                        <button onclick="T25gimg2()" class="t2-5g-btn2"></button>
+                        
+                    </div>
+                    <div class="text">T2 5G</div>
+                </div>
+                <!--T1x-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T1x Image1.webp" alt="t1x" id="T1x Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T1ximg1()" class="t1x-btn1"></button>
+                        <button onclick="T1ximg2()" class="t1x-btn2"></button>
+                    </div>
+                    <div class="text">T1x</div>
+                </div>            
+            </div>
+            <!--4th line-->
+            <div class="mobile-page-lines">
+                <!--T1 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T1 5G Image1.webp" alt="T1 5G" id="T1 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T15gimg1()" class="t1-5g-btn1"></button>
+                        <button onclick="T15gimg2()" class="t1-5g-btn2"></button>
+                    </div>
+                    <div class="text">T1 5G</div>
+                </div>            
+                <!--T1 Pro 5G-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T1 Pro 5G Image1.webp" alt="T1 Pro 5G" id="T1 Pro 5G Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T1pro5gimg1()" class="t1-pro-5g-btn1"></button>
+                        <button onclick="T1pro5gimg2()" class="t1-pro-5g-btn2"></button>
+                    </div>
+                    <div class="text">T1 Pro 5G</div>
+                </div>  
+                <!--T1-->
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/T1 Image1.webp" alt="T1" id="T1 Img">
+                    </div>
+                    <div class="btns">
+                        <button onclick="T1img1()" class="t1-btn1"></button>
+                        <button onclick="T1img2()" class="t1-btn2"></button>
+                        <button onclick="T1img3()" class="t1-btn3"></button>
+                    </div>
+                    <div class="text">T1</div>
+                </div>      
+            </div>
+        </div>
+
+        <!--Accessories6-->
+        <div class="total-mobile-page" id="accessories" style="display: none;">
+            <div class="mobile-page-lines">
+                <div class="mobile-page">
+                    <div class="mobile-img">
+                        <img src="Images/Product/TWS 3e.png" alt="TWS 3e" style="margin-top: 60px;">
+                    </div>
+                    <div class="text">TWS 3e</div>
+                </div>                
+            </div>
+        </div>
+    </div> 
+    
+    <div class="full-details">
+		<div class="contact-mobile-details">
+			<div class="mobile-details">
+				<div class="f-1st-line">
+			<div class="f-1st-line-text">Vivo</div>
+			<div class="f-1st-line-icon"><i class="fa-solid fa-greater-than"></i></div>
+			<div class="f-1st-line-product">Products</div>
+				</div>
+				<div class="f-grid">
+			<div class="f-grid-header">Popular Links</div>
+			<div class="f-grid-header">Purchase Online</div>
+			<div class="f-grid-header">Support</div>
+			<div class="f-grid-header">About Vivo</div>
+			<!--grid items-->
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/products/x100-pro">X100 Pro</a></div>
+			<div class="f-grid-items"><a href="https://shop.vivo.com/in/?_ga=2.189068971.187470408.1727602427-212667117.1726299793&_gl=1%2a1rz2vdi%2a_ga%2aMjEyNjY3MTE3LjE3MjYyOTk3OTM.%2a_ga_68BLCXM546%2aMTcyNzYwODMyNy41Ny4xLjE3Mjc2MDk2MjMuMzkuMC4w">E-Store</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/support/questionList">FAQs</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/activity/impact-report">Indian Impact Report</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/products/x100">X100</a></div>
+			<div class="f-grid-items"><a href="https://shop.vivo.com/in/products/phone?_ga=2.246849156.187470408.1727602427-212667117.1726299793&_gl=1%2afd8j14%2a_ga%2aMjEyNjY3MTE3LjE3MjYyOTk3OTM.%2a_ga_68BLCXM546%2aMTcyNzYwODMyNy41Ny4xLjE3Mjc2MDk3NTYuMzkuMC4w">Buy phones</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/support/service-center">Service Center</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/content/e-waste-management">E-waste Management</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/products/v30-pro">V30 Pro</a></div>
+			<div class="f-grid-items"><a href="https://shop.vivo.com/in/products/accessories?_ga=2.220713624.187470408.1727602427-212667117.1726299793&_gl=1%2apl4vc%2a_ga%2aMjEyNjY3MTE3LjE3MjYyOTk3OTM.%2a_ga_68BLCXM546%2aMTcyNzYwODMyNy41Ny4xLjE3Mjc2MDk4NDAuMjMuMC4w">Buy accessories</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/funtouch">Funtouch Os</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/about-vivo/career/jobs?from=1">Careers at vivo</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/products/v30">V30</a></div>
+			<div class="f-grid-items"><a href="https://passport.vivo.com/in/?_gl=1*1f07krb*_ga*MjEyNjY3MTE3LjE3MjYyOTk3OTM.*_ga_68BLCXM546*MTcyNzYwODMyNy41Ny4xLjE3Mjc2MDk5MTQuOS4wLjA.#/loginPre?_gl=1%2a1f07krb%2a_ga%2aMjEyNjY3MTE3LjE3MjYyOTk3OTM.%2a_ga_68BLCXM546%2aMTcyNzYwODMyNy41Ny4xLjE3Mjc2MDk5MTQuOS4wLjA.#/login">My Orders</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/support/IMEI">IMEI Authentication</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/activity/terms-and-conditions">Terms and Conditions</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/products/t3-5g">T3 5G</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/content/privacy-terms">Privacy Terms for E-Store</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/support/accessory">Query of Spare Parts Price</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/activity/investor-information">Inverstor Information</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/products?choose=all">All Models</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/content/payment-terms-and-policies">Payment Terms and Policies</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/support/upgradePackageHome">System Upadate</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/content/EOP-IN">Equal Opportunity Policy</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/activity/zeiss">vivo ZEISS co-engineered Imaging</a></div>
+			<div class="f-grid-items">empty</div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/email/ceo-transfer">Write to CEO</a></div>
+			<div class="f-grid-items"><a href="https://www.vivo.com/in/content/about-us">About Us</a></div>
+				</div>
+				<div class="f-3rd-line">
+			<div class="f-3rd-line-text"><a href="https://www.vivo.com/in/activity/enterprise-sales">Enterprise sales</a></div>
+			<div class="f-3rd-line-text"><a href="https://www.vivo.com/in/where-to-buy">vivo Exclusive store</a></div>
+				</div>
+			</div>
+			<div class="contact-details">
+				<div class="chat"><i class="fa-regular fa-comment-dots"></i>Chat with us</div>
+				<div class="hours"><i class="fa-solid fa-phone"></i>24*7</div>
+				<div class="numbers">1800-208-3388</div>
+				<div class="hours"><i class="fa-solid fa-phone"></i>24*7</div>
+				<div class="numbers">1800-102-3388</div>
+				<div class="hours"><i class="fa-solid fa-phone"></i>24*7(Only for X-Series Customers)</div>
+				<div class="numbers">1800-208-4488</div>
+				<div class="hours"><i class="fa-regular fa-envelope"></i>Email us(Reply in 24h)</div>
+				<div class="follow"><i class="fa-regular fa-square-plus"></i>Follow us</div>
+				<div class="social-media">
+					<div class="social-media-icons"><i class="fa-brands fa-facebook-f"></i></div>
+					<div class="social-media-icons-insta"><i class="fa-brands fa-instagram"></i></div>
+					<div class="social-media-icons-youtube"><i class="fa-brands fa-youtube"></i></div>
+					<div class="social-media-icons"><i class="fa-brands fa-twitter"></i></div>
+					<div class="social-media-icons"><i class="fa-brands fa-linkedin-in"></i></div>
+				</div>
+			</div>
+		</div>
+		<div class="final-link">
+			<div>2024 vivo Mobile India Pvt Ltd. All rights reserved. | Cookie Policy | Warranty Terms</div>
+			<div>India | Select country/region<i class="fa-solid fa-globe"></i></div>
+		</div>
+	</div>
+</body>
+</html>
